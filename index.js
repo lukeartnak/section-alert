@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-axios.defaults.common['Access-Token'] = process.env.API_KEY;
+axios.defaults.headers.common['Access-Token'] = process.env.API_KEY;
 
 async function fetchSections() {
   const crns = ['25664'];
